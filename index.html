@@ -9,7 +9,14 @@
 	</head>
 	<body>
 		<div id="wrap">
-			<div class="contents">
+			<div id="login-wrap">
+				<form class="hidden" id="login-form">
+					<input id="id-field" type="text" placeholder="What is your name?" />
+					<input id="password-field" type="text" placeholder="Write here..." />
+					<button>Log In</button>
+				</form>
+			</div>
+			<div class="contents hidden">
 				<div class="top">
 					<div class="todo-wrap">
 						<h1>TODO List</h1>
@@ -33,6 +40,7 @@
 			</div>
 		</div>
 
+		<script src="./login.js"></script>
 		<script src="./todo.js"></script>
 		<script src="./weather.js"></script>
 	</body>

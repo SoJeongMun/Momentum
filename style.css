@@ -5,10 +5,18 @@
 #wrap {
 	width: 100vw;
 	height: 100vh;
+	position: relative;
 }
+
+#login-wrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .contents {
 	width: 1200px;
-	text-align: center;
 	display: flex;
 	flex-direction: column;
 }
@@ -19,4 +27,7 @@
 }
 .todo-wrap {
 	width: 50%;
+}
+.hidden{
+	display: none;
 }
