@@ -28,6 +28,10 @@
 .todo-wrap {
 	width: 50%;
 }
+.bottom{
+	text-align: center;
+}
+
 .hidden{
 	display: none;
 }
