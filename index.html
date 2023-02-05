@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Momentum</title>
+		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -12,31 +13,26 @@
 			<div id="login-wrap">
 				<form class="hidden" id="login-form">
 					<input id="id-field" type="text" placeholder="What is your name?" />
-					<input id="password-field" type="text" placeholder="Write here..." />
-					<button>Log In</button>
+					<input id="password-field" type="text" placeholder="Write here your password!" />
+					<button>LogIn📃</button>
 				</form>
 			</div>
 			<div class="contents hidden">
-				<div class="top">
-					<div class="todo-wrap">
-						<h1>TODO List</h1>
-						<form id="todo-form">
-							<input type="text" placeholder="Write a To Do..." />
-						</form>
-						<ul class="todo-list"></ul>
-					</div>
-					<div class="acc-wrap">
-						<div class="clock-wrap">
-							<h1 class="clock">00:00</h1>
-							<h3 class="date">2023/02/04</h3>
-						</div>
-						<div class="weather-wrap">
-							<p></p>
-							<p></p>
-						</div>
+				<div class="todo-wrap">
+					<ul class="todo-list"></ul>
+					<h1>TODO List</h1>
+					<form id="todo-form">
+						<input type="text" placeholder="#Write Here..." />
+					</form>
+					<div class="weather-wrap">
+						<span></span> <span></span>
 					</div>
 				</div>
-				<div class="bottom">
+				<div class="acc">
+					<div class="clock-wrap">
+						<h1 class="clock">00:00</h1>
+						<h3 class="date">2023/02/04</h3>
+					</div>
 					<div class="quote-wrap">
 						<p class="quote"></p>
 						<p class="person"></p>

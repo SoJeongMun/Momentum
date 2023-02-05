@@ -1,12 +1,14 @@
-const imgList = ["bg0.png", "bg1.png", "bg2.png"];
-const bg = document.querySelector("#wrap");
+const colorList = ["#ff2e4c", "#f96204", "#004921", "#9c84c2", "#1e2a78"];
+const bg = document.querySelector(".todo-list");
+const line = document.querySelector("#todo-form input");
+const today = document.querySelector(".date");
 
 function randomBg() {
-  const nowImg = imgList[Math.floor(Math.random() * imgList.length)];
-  bg.style.backgroundImage = `url(img/${nowImg})`;
-  bg.style.backgroundRepeat = "no-repeat";
-  bg.style.backgroundSize = "cover";
+  const nowColor = colorList[Math.floor(Math.random() * colorList.length)];
+  bg.style.backgroundColor = `${nowColor}`;
+  line.style.borderBottomColor = `${nowColor}`;
+  today.style.color = `${nowColor}`;
 }
 
 randomBg();
-setInterval(randomBg, 2000);
+setInterval(randomBg, 3000);

@@ -51,4 +51,4 @@ function randomQuote() {
 }
 
 randomQuote();
-setInterval(randomQuote, 2000);
+setInterval(randomQuote, 3000);

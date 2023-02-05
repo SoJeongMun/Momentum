@@ -1,6 +1,5 @@
-* {
-	margin: 0;
-	padding: 0;
+*{
+	box-sizing: border-box;
 }
 #wrap {
 	width: 100vw;
@@ -14,27 +13,123 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
-.contents {
-	width: 1200px;
-	min-height: 500px;
+#login-form{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: flex;
 	flex-direction: column;
+	row-gap: 10px;
 }
-.top {
+#login-form input{
+	width: 200px;
+	height: 35px;
+	padding: 0 5px;
+	box-sizing: border-box;
+	border-color: #9c84c2;
+}
+#login-form button{
+	border: none;
+	height: 35px;
+	cursor: pointer;
+	background-color: #9c84c2;
+	color: #fff;
+	font-weight: bold;
+}
+
+.contents {
+	width: 600px;
+	min-height: 650px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.24);
 }
+
 .todo-wrap {
+	position: relative;
+}
+.todo-list{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color:#9c84c2;
+	padding:  30px 20px 0 20px;
+	height: 350px;
+}
+.todo-list li{
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 20px;
+	display: flex;
 	width: 50%;
 }
-.bottom{
-	text-align: center;
+.todo-list button{
+	background-color: transparent;
+	border: 2.5px solid #fff;
+	margin-right: 15px;
+	width: 23px;
+	height: 23px;
+}
+.todo-list span{
+	margin-top: 5px;
+}
+.todo-wrap h1{
+	padding: 10px 0 0 20px;
+	margin-bottom: 0;
+}
+#todo-form{
+	padding-left: 20px;
+}
+#todo-form input{
+	border: none;
+	border-bottom: 2px solid salmon;
+	width: 75%;
+	height: 30px;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+.clock-wrap, .weather-wrap, .quote-wrap{
+	padding-left: 20px;
+}
+.clock-wrap{
+	margin-bottom: 20px;
+}
+.clock{
+	margin: 0;
+}
+.date{
+	margin: 0;
+	margin-top: 8px;
+	color: #9c84c2;
+}
+.weather-wrap{
+	color: #fff;
+	position: absolute;
+	bottom: 25%;
+	right: 20px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.quote-wrap{
+	padding-bottom: 20px;
+}
+.quote, .person{
+	font-style: italic;
+	color: #a1a1a1;
+}
+.person{
+	font-size: 14px;
+	margin-top: 6px;
 }
 
 .hidden{
